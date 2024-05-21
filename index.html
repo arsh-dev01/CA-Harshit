@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CA HARSHIT PURWAR</title>
+    <!-- 
+        =====================================================
+        FontAwosome Librari 
+        =====================================================
+     -->
+    <link rel="stylesheet" href="./FontAwosome/css/all.min.css" />
+    <link rel="stylesheet" href="./FontAwosome/css/fontawesome.min.css" />
+    <!-- 
+        =====================================================
+         Custom Style Sheet Adding
+        =====================================================
+     -->
+    <!-- Defult Styles -->
+    <link rel="stylesheet" href="./css/utilety.css" />
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Media qurey Styles -->
+    <link rel="stylesheet" href="./css/mediaquery.css" />
+  </head>
+  <body>
+    <!-- 
+        =====================================================
+        Desktop Header
+        =====================================================
+     -->
+    <header class="desktop-menu">
+      <div class="logo">HARSHITPURWAR&CO.</div>
+      <div class="hambarger">
+        <button>
+          <i class="fa-solid fa-bars bar"></i>
+          <i class="fa-solid fa-xmark bar" style="display: none"></i>
+        </button>
+      </div>
+      <nav class="navbar">
+        <ul class="">
+          <li>
+            <a href="#home">Home <span></span></a>
+          </li>
+          <li>
+            <a href="#services">Services<span></span></a>
+          </li>
+          <li>
+            <a href="#why">About<span></span></a>
+          </li>
+          <li>
+            <a href="#experience">Experience<span></span></a>
+          </li>
+          <li>
+            <a href="#touch">Contact Us<span></span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- 
+        =====================================================
+        Home Section
+        =====================================================
+     -->
+      <section class="home">
+        <div class="title-box">
+          <div>
+            <h3>WE PROVIDE BEST FINANCIAL SOLUTIONS</h3>
+            <h1>CA <span>HARSHIT PURWAR</span></h1>
+            <p>
+              We have over 25 Years's of Experience in Finance and Business
+              management so we can make your business more successful you can
+              turst us
+            </p>
+            <div class="buttons">
+              <button
+                class="Viwe-button Btn"
+                onclick='window.location.hash = "#services"'
+              >
+                <span>
+                  View Services
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </button>
+              <button
+                class="Viwe-button Btn"
+                onclick='window.location.hash = "#services"'
+              >
+                <span>
+                  Contact us
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="socalmedia-icons">
+            <a href="#">
+              <i class="fa-brands fa-instagram">
+                <span class="icon-back"></span>
+              </i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-whatsapp">
+                <span class="icon-back"></span>
+              </i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter">
+                <span class="icon-back"></span>
+              </i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-github">
+                <span class="icon-back"></span>
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="image">
+          <span class="after"></span>
+          <span class="before"></span>
+          <figure>
+            <img src="./Image/team-3.png" alt="" />
+          </figure>
+        </div>
+      </section>
+      <!-- <section
+        style="height: 500vh; display: grid; place-content: center"
+      ></section> -->
+    </main>
+  </body>
+  <script>
+    let bar = document.querySelector(".fa-bars");
+    let xmark = document.querySelector(".fa-xmark");
+    let Navbar = document.querySelector("header.desktop-menu .navbar");
+    bar.onclick = () => {
+      bar.style.display = "none";
+      xmark.style.display = "block";
+      Navbar.style.display = "flex";
+    };
+    xmark.onclick = () => {
+      xmark.style.display = "none";
+      bar.style.display = "block";
+      Navbar.style.display = "none";
+    };
+  </script>
+</html>

@@ -1,0 +1,122 @@
+/* 
+=======================================================================================
+Imporitng FontFace 
+=======================================================================================
+*/
+@font-face {
+  font-family: code_stack;
+  src: url(../FontAwosome/Font/MyFont.ttf);
+}
+/* 
+=======================================================================================
+Createing Root Variabels
+=======================================================================================
+*/
+:root {
+  --base-color: 225;
+  --body-color: hsl(var(--base-color), 60%, 99%);
+  --main-color: hsl(var(--base-color), 69%, 61%);
+  --main-color-alt: hsl(var(--base-color), 57%, 53%);
+  --main-color-lighter: hsl(var(--base-color), 92%, 85%);
+  --btn-bgcolor: hsl(var(--base-color), 50%, 55%);
+  --title-color: hsl(var(--base-color), 25%, 30%);
+  --text-color: hsl(var(--base-color), 35%, 12%);
+  --text-color-light: hsl(var(--base-color), 8%, 65%);
+  --btn-color: hsl(var(--base-color), 10%, 95%);
+  --socal-media-color: hsl(var(--base-color), 92%, 85%);
+  /* Font Sizes */
+  --logo: 2.6rem;
+  --nav-btn: 1.5rem;
+  --bar-font-size: 1.7rem;
+  --title-size: 3rem;
+  --side-title-size: 1.5rem;
+  --text-size: 1.2rem;
+  --para-size: 1.5rem;
+  --btn-font_size: 1.4vw;
+  --social-media-size: 3rem;
+  /* Height */
+  --header-height: 8vh;
+  --Hembarger-height: 40vh;
+  --Home-height: calc(100vh - var(--header-height));
+}
+
+/* Set Every Element Defult */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: code_stack;
+  text-decoration: none;
+  list-style-type: none;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--body-color);
+}
+header,
+section,
+footer {
+  width: 100%;
+  padding: 1vw 3vw;
+}
+main {
+  width: 100vw;
+  height: calc(100vh - var(--header-height));
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: var(--header-height);
+  /* background-color: var(--main-color); */
+}
+section {
+  padding: 1vw 3vw;
+}
+img {
+  object-fit: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+i {
+  cursor: default;
+}
+/* 
+=======================================================================================
+Create utilety Classes Styles
+=======================================================================================
+*/
+.Btn {
+  width: 14vw;
+  height: 7.5vh;
+  background-color: var(--btn-bgcolor);
+  font-size: var(--btn-font_size);
+  color: var(--btn-color);
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  margin-right: 2vw;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.Btn:hover {
+  background-color: var(--main-color-alt);
+}
+.Btn:active {
+  transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+}

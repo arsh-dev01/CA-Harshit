@@ -1,0 +1,51 @@
+header,
+section,
+footer {
+  padding: 1vw 6vw;
+  width: 100% !important;
+}
+footer {
+  padding: 0;
+}
+section {
+  height: 100vh;
+}
+i {
+  color: var(--icon-colo) !important;
+}
+.StickyHeader {
+  background-color: red;
+  transition: all 0.4s;
+  position: fixed;
+  display: flex !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: hsl(var(--hue-color), 80%, 94%) !important;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.Btn {
+  background-color: var(--btn-bgcolor);
+  color: #fff;
+  width: 13vw;
+  height: 8vh;
+  font-size: var(--pra-size);
+  letter-spacing: 0.06vw;
+  cursor: pointer;
+  border-radius: 0.5vw;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+.Btn:hover {
+  background-color: var(--first-color-alt);
+}

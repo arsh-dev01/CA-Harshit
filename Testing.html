@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesing</title>
+
+    <!-- <link rel="stylesheet" href="./css2/style.css" />
+    <link rel="stylesheet" href="./css2/MediaQ.css" />
+    <link rel="stylesheet" href="./css2/utileti.css" /> -->
+    <link rel="stylesheet" href="./FontAwosome/css/all.min.css" />
+    <link rel="stylesheet" href="./FontAwosome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Testinh.css" />
+  </head>
+  <style>
+    /*Bar  */
+    .bars {
+      width: 3vw;
+      height: 4vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      cursor: pointer;
+      /* outline: 1px solid; */
+      position: relative;
+    }
+    .bars span {
+      display: block;
+      background-color: #333;
+      width: 100%;
+      height: 0.4vw;
+      outline: 1px solid;
+      border-radius: 15px;
+      animation: anime 1s linear;
+    }
+
+    .bars span {
+      display: block;
+      width: 100%;
+      height: 0.5vw;
+      background-color: #333;
+      border-radius: 15px;
+      position: absolute;
+    }
+    .bars .span:nth-child(1) {
+      transform: rotate(-45deg);
+    }
+    .bars .span:nth-child(2) {
+      display: none;
+    }
+    .bars .span:nth-child(3) {
+      transform: rotate(45deg);
+    }
+    .animation {
+      animation: anime 1s linear;
+    }
+    @keyframes anime {
+      0% {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        height: 0.4vw;
+        outline: 1px solid;
+        border-radius: 15px;
+      }
+      100% {
+        display: block;
+        width: 100%;
+        height: 0.5vw;
+        background-color: #333;
+        outline: 1px solid;
+        border-radius: 15px;
+        /* position: absolute; */
+      }
+    }
+  </style>
+  <body>
+    <!-- <section class="experience" id="experience">
+      <h1>Perspective & Experience</h1>
+      <div class="box">
+        <div>
+          <h2><i class="fa-solid fa-coins"></i> Income Tax</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+            odio.
+          </p>
+        </div>
+        <div>
+          <h2><i class="fa-solid fa-coins"></i> Internal Audit</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+            odio.
+          </p>
+        </div>
+        <div>
+          <h2><i class="fa-solid fa-coins"></i> Statutory Audit</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+            odio.
+          </p>
+        </div>
+        <div>
+          <h2><i class="fa-solid fa-coins"></i> Accountancy</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+            odio.
+          </p>
+        </div>
+        <div>
+          <h2><i class="fa-solid fa-coins"></i> Project Financing</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+            odio.
+          </p>
+        </div>
+        <div>
+          <h2><i class="fa-solid fa-coins"></i> Business management</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+            odio.
+          </p>
+        </div>
+        <div>
+          <h2><i class="fa-solid fa-coins"></i> Goods and services tax</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+            odio.
+          </p>
+        </div>
+      </div>
+    </section> -->
+    <div class="bars">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </body>
+  <script>
+    document.querySelector(".bars").addEventListener("click", (e) => {
+      document.querySelector(".bars").classList.toggle("animation");
+      // document.querySelector(".bars").classList.toggle(".span");
+      // document.querySelector(".bars").classList.toggle(".remove");
+      // document.querySelector(".bars").classList.toggle("backspan");
+    });
+  </script>
+</html>
