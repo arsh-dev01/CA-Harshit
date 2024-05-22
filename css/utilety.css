@@ -30,8 +30,8 @@ Createing Root Variabels
   --bar-font-size: 1.7rem;
   --title-size: 3rem;
   --side-title-size: 1.5rem;
-  --text-size: 1.2rem;
-  --para-size: 1.5rem;
+  --text-size: 2rem;
+  --para-size: 1.9rem;
   --btn-font_size: 1.4vw;
   --social-media-size: 3rem;
   /* icon size */
@@ -52,6 +52,9 @@ Createing Root Variabels
   text-decoration: none;
   list-style-type: none;
   border: none;
+}
+main * {
+  z-index: -10;
 }
 html,
 body,
@@ -92,6 +95,9 @@ span,
 i {
   cursor: default;
 }
+button {
+  background-color: transparent;
+}
 /* 
 =======================================================================================
 Create utilety Classes Styles
@@ -110,7 +116,7 @@ Create utilety Classes Styles
   border-radius: 0.3rem;
   margin-right: 2vw;
   transition: all 0.2s;
-  a-webkit-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
@@ -118,6 +124,7 @@ Create utilety Classes Styles
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
+  -webkit-border-radius: 0.3rem;
 }
 .Btn:hover {
   background-color: var(--main-color-alt);

@@ -110,7 +110,7 @@ section.home div.title-box p {
   text-align: justify;
   color: var(--text-color);
   font-size: var(--para-size);
-  line-height: 1.5rem;
+  line-height: 2.4rem;
 }
 section.home div.buttons {
   display: flex;
@@ -288,7 +288,9 @@ section.services div.title-box h1 {
 }
 section.services div.title-box p {
   color: var(--text-color);
+  font-size: var(--text-size);
   text-align: center;
+  margin-top: 2vh;
 }
 section.services div.coniner-box {
   width: 100%;
@@ -317,13 +319,6 @@ section.services div.coniner-box div.box {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
 }
-section.services div.coniner-box div.box:nth-last-child(1) h1,
-section.services div.coniner-box div.box:nth-last-child(2) h1 {
-  font-size: calc(var(--text-size) - 0.1rem);
-}
-section.services div.coniner-box div.box:nth-last-child(3) h1 {
-  font-size: calc(var(--text-size) + 0.2rem);
-}
 section.services div.coniner-box div.box .top * {
   pointer-events: none;
 }
@@ -332,7 +327,15 @@ section.services div.coniner-box div.box .top h1 {
   justify-content: center;
   align-items: center;
   gap: 1vw;
+  font-size: var(--text-size);
   color: var(--title-color);
+}
+section.services div.coniner-box div.box:nth-last-child(1) h1,
+section.services div.coniner-box div.box:nth-last-child(2) h1 {
+  font-size: calc(var(--text-size) - 0.1rem);
+}
+section.services div.coniner-box div.box:nth-last-child(3) h1 {
+  font-size: calc(var(--text-size) + 0.2rem);
 }
 section.services div.coniner-box div.box .top i {
   font-size: var(--icon-size);

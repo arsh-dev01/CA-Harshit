@@ -12,11 +12,19 @@ Under 1200px and minmam 900px
     --side-title-size: 1.1rem;
     --para-size: 1.2rem;
     --social-media-size: 1.5rem;
+    --text-size: 1.2rem;
   }
   header.desktop-menu .bar {
     display: none;
   }
   /* Home Section */
+
+  section.home div.title-box p {
+    text-align: justify;
+    color: var(--text-color);
+    font-size: var(--para-size);
+    line-height: 1.5rem;
+  }
 }
 
 /* 
@@ -33,8 +41,9 @@ Under 900px and minmam 500px
     --side-title-size: 1.7rem;
     --para-size: 1.7rem;
     --btn-font_size: 1.5rem;
+    --text-size: 2rem;
     /* Height */
-    --Home-height: 120vh;
+    --section-height: 120vh;
   }
   .Btn {
     width: 29vw;
@@ -63,15 +72,13 @@ Under 900px and minmam 500px
     width: 15vw;
   }
   /* home Section */
-  section.home * {
-    z-index: -10;
-  }
   section.home {
     flex-wrap: wrap-reverse;
     height: 120vh;
   }
   section.home div.title-box {
     width: 100%;
+    padding: 0;
   }
   section.home div.buttons {
     justify-content: center;
@@ -86,11 +93,18 @@ Under 900px and minmam 500px
     width: 70vw;
     height: 50vh;
     padding: 2vw;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
   section.home div.image figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+    top: 1.2vh;
   }
   section.home div.image .before,
   section.home div.image .after {
@@ -112,11 +126,32 @@ Under 900px and minmam 500px
     line-height: 2.1rem;
   }
   section.home .socalmedia-icons {
-    width: 60vw;
+    width: 100%;
     height: 6vh;
+    margin-top: 5vh;
   }
   section.home .socalmedia-icons i {
     padding: 2vw;
+  }
+  /* 
+  =======================|Services|===================================
+  */
+  section.services {
+    height: 110vh;
+  }
+  section.services div.coniner-box {
+    margin: 0;
+  }
+  section.services div.coniner-box div.box {
+    width: 40vw;
+  }
+
+  section.services div.coniner-box div.box:nth-last-child(1) h1,
+  section.services div.coniner-box div.box:nth-last-child(2) h1 {
+    font-size: calc(var(--text-size) - 0.5rem);
+  }
+  section.services div.coniner-box div.box:nth-last-child(3) h1 {
+    font-size: var(--text-size);
   }
 }
 
@@ -135,6 +170,7 @@ Under 500px and minmam 0px
     --para-size: 1rem;
     --btn-font_size: 1rem;
     --social-media-size: 2rem;
+    --text-size: 1.5rem;
     /* Height */
     --Home-height: 120vh;
   }
@@ -165,20 +201,19 @@ Under 500px and minmam 0px
     flex-direction: column;
   }
   header.desktop-menu nav ul li {
-    width: 25vw;
+    width: 35vw;
   }
   /* 
   ==========================| Home |=====================================
   */
-  section.home * {
-    z-index: -10;
-  }
+  
   section.home {
     flex-wrap: wrap-reverse;
     height: 116vh;
   }
   section.home div.title-box {
     width: 100%;
+    padding: 0;
   }
   section.home div.buttons {
     justify-content: center;
@@ -192,6 +227,11 @@ Under 500px and minmam 0px
   section.home div.image figure {
     width: 70vw;
     height: 50vh;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
   section.home div.image .before,
   section.home div.image .after {
@@ -220,5 +260,34 @@ Under 500px and minmam 0px
   }
   section.home .socalmedia-icons i {
     padding: 2vw;
+  }
+  /* 
+  =======================|Services|===================================
+  */
+  section.services {
+    height: 201vh;
+  }
+  section.services div.coniner-box {
+    margin: 0;
+  }
+  section.services div.coniner-box {
+    height: 87%;
+    margin-top: 2vh;
+  }
+  section.services div.coniner-box div.box {
+    width: 70vw;
+    margin: 0;
+  }
+
+  section.services div.coniner-box div.box .top h1 {
+    gap: 5vw;
+  }
+  section.services div.coniner-box div.box:nth-last-child(1) h1,
+  section.services div.coniner-box div.box:nth-last-child(2) h1 {
+    font-size: calc(var(--text-size) - 0.3rem);
+    gap: 2vw;
+  }
+  section.services div.coniner-box div.box:nth-last-child(3) h1 {
+    font-size: var(--text-size);
   }
 }
