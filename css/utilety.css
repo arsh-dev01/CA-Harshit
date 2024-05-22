@@ -34,10 +34,12 @@ Createing Root Variabels
   --para-size: 1.5rem;
   --btn-font_size: 1.4vw;
   --social-media-size: 3rem;
+  /* icon size */
+  --icon-size: 2rem;
   /* Height */
   --header-height: 8vh;
   --Hembarger-height: 40vh;
-  --Home-height: calc(100vh - var(--header-height));
+  --section-height: calc(100vh - var(--header-height));
 }
 
 /* Set Every Element Defult */
@@ -49,9 +51,11 @@ Createing Root Variabels
   font-family: code_stack;
   text-decoration: none;
   list-style-type: none;
+  border: none;
 }
 html,
-body {
+body,
+main {
   scroll-behavior: smooth;
 }
 body {
@@ -105,10 +109,15 @@ Create utilety Classes Styles
   align-items: center;
   border-radius: 0.3rem;
   margin-right: 2vw;
-  -webkit-border-radius: 0.3rem;
+  transition: all 0.2s;
+  a-webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 .Btn:hover {
   background-color: var(--main-color-alt);

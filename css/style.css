@@ -1,8 +1,14 @@
 /*
 =====================================================
-  Desktop Header and Scroll Header Styling
+  Desktop Header Styling
 =====================================================
   */
+body {
+  /* background: url(../Image/image.svg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 header.desktop-menu {
   position: fixed;
   top: 0;
@@ -69,14 +75,15 @@ header.desktop-menu nav ul a:hover span {
 }
 /*
 =====================================================
-  Header Styling
+  Home Styling
 =====================================================
 */
 section.home {
+  background: #b3afaf3a;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: var(--Home-height);
+  height: var(--section-height);
 }
 section.home div.title-box {
   width: 50vw;
@@ -111,6 +118,9 @@ section.home div.buttons {
 section.home div.title-box button {
   margin-top: 3vh;
   letter-spacing: 1px;
+}
+section.home div.title-box button * {
+  pointer-events: none;
 }
 /* Side Image */
 section.home div.image {
@@ -252,4 +262,131 @@ section.home .socalmedia-icons i:hover .icon-back {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
+}
+
+/*
+=====================================================
+ Services section Styling
+=====================================================
+*/
+section.services {
+  height: var(--section-height);
+  padding-top: 5vh;
+  background: #817a7a3a;
+}
+section.services div.title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.services div.title-box h1 {
+  text-align: center;
+  font-size: var(--title-size);
+  color: var(--title-color);
+  letter-spacing: 0.1vw;
+}
+section.services div.title-box p {
+  color: var(--text-color);
+  text-align: center;
+}
+section.services div.coniner-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+}
+section.services div.coniner-box div.box {
+  overflow: hidden;
+  position: relative;
+  background: #e6e5e5;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 2vw;
+  width: 22vw;
+  height: 20vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2vw 0.8vw #00000028, 0 -0.2vw 0.4vw #00000098;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+section.services div.coniner-box div.box:nth-last-child(1) h1,
+section.services div.coniner-box div.box:nth-last-child(2) h1 {
+  font-size: calc(var(--text-size) - 0.1rem);
+}
+section.services div.coniner-box div.box:nth-last-child(3) h1 {
+  font-size: calc(var(--text-size) + 0.2rem);
+}
+section.services div.coniner-box div.box .top * {
+  pointer-events: none;
+}
+section.services div.coniner-box div.box .top h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  color: var(--title-color);
+}
+section.services div.coniner-box div.box .top i {
+  font-size: var(--icon-size);
+  color: var(--title-color);
+}
+section.services div.coniner-box div.box span {
+  /*display: none;
+  */
+  opacity: 0;
+  position: absolute;
+  /*left: 0;
+  bottom: 0.54vh;
+  */
+  backdrop-filter: blur(1px);
+  background-color: #3d393900;
+  width: 100%;
+  height: 0%;
+  display: grid;
+  place-content: center;
+  color: var(--text-color-light);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+section.services div.coniner-box div.box span button {
+  background-color: var(--text-color-light);
+  padding: 1rem 2rem;
+  color: var(--title-color);
+  letter-spacing: 01px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+section.services div.coniner-box div.box span button:hover {
+  filter: brightness(95%);
+  -webkit-filter: brightness(95%);
+}
+section.services div.coniner-box div.box span button:active {
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+}
+section.services div.coniner-box div.box:hover span {
+  opacity: 1;
 }

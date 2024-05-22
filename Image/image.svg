@@ -1,0 +1,114 @@
+    <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1152 703"
+              preserveAspectRatio="xMidYMid"
+              width="1152"
+              height="703"
+              style="
+                shape-rendering: auto;
+                display: block;
+                background: rgb(153, 153, 153);
+              "
+            >
+              <g data-idx="1">
+                <linearGradient
+                  gradientUnits="objectBoundingBox"
+                  y2="0"
+                  y1="0"
+                  x2="0.5"
+                  x1="0"
+                  id="lg-0.6590519274487807"
+                  data-idx="2"
+                >
+                  <stop
+                    offset="0"
+                    stop-color="hsl(225, 69%, 61%)"
+                    data-idx="3"
+                  ></stop>
+
+                  <stop
+                    offset="1"
+                    stop-color=" hsl(225, 92%, 85%)"
+                    data-idx="4"
+                  ></stop>
+                </linearGradient>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M -548.629 703 Q -492.111 542.889 -465.395 382.303 T -223.838 92.9981 T 152.395 -136.596 T 626.477 -284.004 T 1152 -334.797 T 1677.52 -284.004 T 2151.6 -136.596 T 2527.84 92.9981 T 2769.39 382.303 T 2852.63 703"
+                  data-idx="5"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M -378.566 703 Q -350.71 546.873 -286.262 383.547 T -20.482 102.625 T 386.717 -105.883 T 886.22 -216.828 T 1417.78 -216.828 T 1917.28 -105.883 T 2324.48 102.625 T 2590.26 383.547 T 2682.57 703"
+                  data-idx="7"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M -208.504 703 Q -143.702 543.748 -104.941 385.282 T 189.979 115.933 T 631.358 -64.0397 T 1152 -127.238 T 1672.64 -64.0397 T 2114.02 115.933 T 2408.94 385.282 T 2512.5 703"
+                  data-idx="9"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M -38.4406 703 Q 39.9023 544.437 79.4501 387.802 T 409.772 135.032 T 887.102 -5.24429 T 1416.9 -5.24429 T 1894.23 135.032 T 2224.55 387.802 T 2342.44 703"
+                  data-idx="11"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M 131.622 703 Q 190.465 548.969 268.327 391.661 T 641.811 163.745 T 1152 80.3216 T 1662.19 163.745 T 2035.67 391.661 T 2172.38 703"
+                  data-idx="13"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M 301.685 703 Q 395.313 550.82 464.081 397.999 T 889.238 209.498 T 1414.76 209.498 T 1839.92 397.999 T 2002.31 703"
+                  data-idx="15"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M 471.748 703 Q 561.126 558.621 670.989 409.467 T 1152 287.881 T 1633.01 409.467 T 1832.25 703"
+                  data-idx="17"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M 641.811 703 Q 756.972 563.58 896.906 433.372 T 1407.09 433.372 T 1662.19 703"
+                  data-idx="19"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M 811.874 703 Q 928.507 579.233 1152 495.441 T 1492.13 703"
+                  data-idx="21"
+                ></path>
+                <path
+                  opacity="0.9"
+                  fill="url(#lg-0.6590519274487807)"
+                  d="M 981.937 703 Q 1152 614.351 1322.06 703"
+                  data-idx="23"
+                ></path>
+                <g data-idx="25"></g>
+              </g>
+              <text
+                data-watermark="true"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                stroke-opacity="0.1"
+                fill="black"
+                fill-opacity="0.1"
+                stroke="white"
+                stroke-width="1"
+                font-size="15.0"
+                x="576.0"
+                y="351.5"
+                data-idx="26"
+                style="opacity: 1; font-size: 15px"
+              >
+                LOADING.IO
+              </text>
+            </svg>
