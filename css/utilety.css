@@ -53,9 +53,6 @@ Createing Root Variabels
   list-style-type: none;
   border: none;
 }
-main * {
-  z-index: -10;
-}
 html,
 body,
 main {
@@ -97,6 +94,9 @@ i {
 }
 button {
   background-color: transparent;
+}
+button i {
+  cursor: pointer;
 }
 /* 
 =======================================================================================

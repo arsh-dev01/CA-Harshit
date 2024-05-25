@@ -20,7 +20,6 @@ i {
   display: flex !important;
   top: 0;
   left: 0;
-  z-index: 100;
   background-color: hsl(var(--hue-color), 80%, 94%) !important;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;

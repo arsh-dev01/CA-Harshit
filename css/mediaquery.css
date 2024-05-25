@@ -57,7 +57,6 @@ Under 900px and minmam 500px
     background-color: #fff;
     width: 100%;
     height: var(--Hembarger-height);
-    z-index: 1000;
     justify-content: center;
     align-items: center;
   }
@@ -170,7 +169,7 @@ Under 500px and minmam 0px
     --para-size: 1rem;
     --btn-font_size: 1rem;
     --social-media-size: 2rem;
-    --text-size: 1.5rem;
+    --text-size: 1.4rem;
     /* Height */
     --Home-height: 120vh;
   }
@@ -182,14 +181,14 @@ Under 500px and minmam 0px
   ==========================| Header |=====================================
   */
   header.desktop-menu nav.navbar {
+    border-top: 2px solid var(--text-color-light);
     display: none;
     position: fixed;
     top: var(--header-height);
     left: 0;
-    background-color: var(--main-color-lighter);
+    background-color: #fff;
     width: 100%;
     height: var(--Hembarger-height);
-    z-index: 1000;
     justify-content: center;
     align-items: center;
   }
@@ -206,7 +205,7 @@ Under 500px and minmam 0px
   /* 
   ==========================| Home |=====================================
   */
-  
+
   section.home {
     flex-wrap: wrap-reverse;
     height: 116vh;
@@ -256,7 +255,7 @@ Under 500px and minmam 0px
   section.home .socalmedia-icons {
     width: 100%;
     height: 8vh;
-    margin-top: 8vh;
+    margin-top: 5vh;
   }
   section.home .socalmedia-icons i {
     padding: 2vw;
