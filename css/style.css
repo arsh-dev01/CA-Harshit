@@ -81,7 +81,6 @@ header.desktop-menu nav ul a:hover span {
 =====================================================
 */
 section.home {
-  background: #b3afaf3a;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -140,7 +139,7 @@ section.home div.image figure {
   transform: rotate(2deg);
   border: var(--text-color-light) 0.5vw groove;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   border-radius: 0.5rem;
   transition: all 0.5s;
   -webkit-border-radius: 0.5rem;
@@ -196,7 +195,7 @@ section.home div.image .before {
   -o-border-radius: 0.5rem;
 }
 section.home div.image figure img {
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 /* Socal media icons  */
@@ -273,7 +272,6 @@ section.home .socalmedia-icons i:hover .icon-back {
 section.services {
   height: var(--section-height);
   padding-top: 5vh;
-  background: #817a7a3a;
 }
 section.services div.title-box {
   display: flex;
@@ -304,7 +302,6 @@ section.services div.coniner-box {
 section.services div.coniner-box div.box {
   overflow: hidden;
   position: relative;
-  background: #e6e5e5;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -343,13 +340,8 @@ section.services div.coniner-box div.box .top i {
   color: var(--title-color);
 }
 section.services div.coniner-box div.box span {
-  /*display: none;
-  */
   opacity: 0;
   position: absolute;
-  /*left: 0;
-  bottom: 0.54vh;
-  */
   backdrop-filter: blur(1px);
   background-color: #3d393900;
   width: 100%;
@@ -393,4 +385,52 @@ section.services div.coniner-box div.box span button:active {
 }
 section.services div.coniner-box div.box:hover span {
   opacity: 1;
+}
+
+/*
+=====================================================
+  about section Styling
+=====================================================
+*/
+section.about {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.about figure {
+  width: 40vw;
+  height: 45vh;
+  padding: 1vh 1vw;
+  /* border: 2px solid; */
+  position: relative;
+}
+section.about figure img {
+  width: 100%;
+  height: 105%;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+section.about div.about-box {
+  width: 40vw;
+  height: 40vh;
+  /* border: 2px solid; */
+}
+section.about div.about-box h2 {
+  color: var(--text-color);
+  font-size: var(--text-size);
+}
+section.about div.about-box h1 {
+  color: var(--title-color);
+  font-size: var(--title-size);
+}
+
+section.about div.about-box p {
+  margin: 2vh 0 4vh 0;
+  color: var(--para-color);
+  font-size: var(--para-size);
 }

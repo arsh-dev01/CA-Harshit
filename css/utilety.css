@@ -78,6 +78,9 @@ main {
 section {
   padding: 1vw 3vw;
 }
+figure {
+  cursor: pointer;
+}
 img {
   object-fit: cover;
 }
