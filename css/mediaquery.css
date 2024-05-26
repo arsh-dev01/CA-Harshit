@@ -41,12 +41,15 @@ Under 900px and minmam 500px
     --side-title-size: 1.7rem;
     --para-size: 1.7rem;
     --btn-font_size: 1.5rem;
-    --text-size: 2rem;
+    --text-size: 1.9rem;
     /* Height */
     --section-height: 120vh;
   }
   .Btn {
     width: 29vw;
+  }
+  .box {
+    width: 40vw;
   }
   /* ==================================================================================== */
   header.desktop-menu nav.navbar {
@@ -68,7 +71,7 @@ Under 900px and minmam 500px
     flex-direction: column;
   }
   header.desktop-menu nav ul li {
-    width: 15vw;
+    width: 20vw;
   }
   /* home Section */
   section.home {
@@ -131,7 +134,7 @@ Under 900px and minmam 500px
   section.home .socalmedia-icons {
     width: 100%;
     height: 6vh;
-    margin-top: 5vh;
+    margin-top: 7vh;
   }
   section.home .socalmedia-icons i {
     padding: 2vw;
@@ -142,18 +145,18 @@ Under 900px and minmam 500px
   section.services {
     height: 110vh;
   }
+  section.services div.title-box p {
+    margin-bottom: 5vh;
+  }
   section.services div.coniner-box {
     margin: 0;
-  }
-  section.services div.coniner-box div.box {
-    width: 40vw;
   }
 
   section.services div.coniner-box div.box:nth-last-child(1) h1 {
     font-size: calc(var(--text-size) - 0.5rem);
   }
   section.services div.coniner-box div.box:nth-last-child(2) h1 {
-    font-size: calc(var(--text-size) - 0.6rem);
+    font-size: calc(var(--text-size) - 0.5rem);
   }
   section.services div.coniner-box div.box:nth-last-child(3) h1 {
     font-size: var(--text-size);
@@ -163,7 +166,7 @@ Under 900px and minmam 500px
   =======================|about|===================================
   */
   section.about {
-    height: 100vh;
+    height: 95vh;
     padding-top: 5vh;
   }
   section.about figure {
@@ -172,6 +175,32 @@ Under 900px and minmam 500px
   }
   section.about div.about-box {
     width: 100%;
+  }
+  /* 
+  =======================|Experience|===================================
+  */
+
+  section.experience {
+    height: 120vh;
+  }
+  section.experience h1.title {
+    margin: 0;
+    margin-bottom: 2vh;
+  }
+  section.experience div.contaner-box .box:nth-last-child(3) h1 {
+    font-size: calc(var(--text-size) - 0.2rem);
+  }
+  section.experience div.contaner-box .box:nth-last-child(2) h1 {
+    font-size: calc(var(--text-size) - 0.5rem);
+  }
+  section.experience div.contaner-box .box:nth-last-child(1) {
+    width: 52vw;
+  }
+  section.experience div.contaner-box .box h1 {
+    margin-bottom: 20%;
+  }
+  section.experience div.contaner-box .box p {
+    opacity: 1;
   }
 }
 
@@ -195,8 +224,15 @@ Under 500px and minmam 0px
     --Home-height: 120vh;
   }
   .Btn {
-    width: 40vw;
+    width: 44vw;
     height: 8vh;
+  }
+  .box {
+    width: 70vw;
+    margin: 0;
+  }
+  .title {
+    font-size: x-large;
   }
   /* 
   ==========================| Header |=====================================
@@ -294,10 +330,6 @@ Under 500px and minmam 0px
     height: 87%;
     margin-top: 2vh;
   }
-  section.services div.coniner-box div.box {
-    width: 70vw;
-    margin: 0;
-  }
 
   section.services div.coniner-box div.box .top h1 {
     gap: 5vw;
@@ -326,4 +358,22 @@ Under 500px and minmam 0px
   section.about div.about-box {
     width: 100%;
   }
+  /* 
+  =======================|experience|===================================
+  */
+  section.experience {
+    height: 180vh;
+  }
+  section.experience div.contaner-box .box:nth-last-child(2) h1 {
+    font-size: calc(var(--text-size) - 0.2rem);
+  }
+  section.experience div.contaner-box .box:nth-last-child(1) h1 {
+    font-size: calc(var(--text-size) - 0.2rem);
+  }
+  /* section.experience div.contaner-box .box h1 {
+    margin-bottom: 20%;
+  }
+  section.experience div.contaner-box .box p {
+    opacity: 1;
+  } */
 }

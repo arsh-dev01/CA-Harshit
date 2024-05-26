@@ -53,20 +53,20 @@ header.desktop-menu nav ul li {
 }
 header.desktop-menu nav ul li a {
   position: relative;
-  transition: all 0.2s;
+  transition: var(--trasnition-defult);
   font-size: var(--nav-btn);
   color: var(--text-color);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
 }
 header.desktop-menu nav ul a span {
   padding: 0.1vw 0%;
   position: absolute;
   left: 0;
   bottom: -0.7vw;
-  transition: all 0.5s;
+  transition: var(--trasnition-defult);
   border-top: 1px solid var(--main-color);
 }
 header.desktop-menu nav ul a:hover {
@@ -119,6 +119,7 @@ section.home div.buttons {
 section.home div.title-box button {
   margin-top: 3vh;
   letter-spacing: 1px;
+  margin-right: 3vw;
 }
 section.home div.title-box button * {
   pointer-events: none;
@@ -141,7 +142,7 @@ section.home div.image figure {
   display: flex;
   justify-content: center;
   border-radius: 0.5rem;
-  transition: all 0.5s;
+  transition: var(--trasnition-defult);
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
@@ -150,10 +151,10 @@ section.home div.image figure {
   -moz-transform: rotate(2deg);
   -ms-transform: rotate(2deg);
   -o-transform: rotate(2deg);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
 }
 section.home div.image figure:hover {
   transform: rotate(0);
@@ -220,15 +221,15 @@ section.home .socalmedia-icons i {
   border-radius: 50%;
   padding: 0.7vw;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: var(--trasnition-defult);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
 }
 section.home .socalmedia-icons .icon-back {
   display: block;
@@ -239,7 +240,7 @@ section.home .socalmedia-icons .icon-back {
   height: 100%;
   position: absolute;
   transform: scale(0);
-  transition: all 0.5s;
+  transition: var(--trasnition-defult);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -248,10 +249,10 @@ section.home .socalmedia-icons .icon-back {
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   -o-transform: scale(0);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
 }
 section.home .socalmedia-icons i:hover {
   color: var(--main-color-lighter);
@@ -271,7 +272,10 @@ section.home .socalmedia-icons i:hover .icon-back {
 */
 section.services {
   height: var(--section-height);
-  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 section.services div.title-box {
   display: flex;
@@ -280,10 +284,8 @@ section.services div.title-box {
   align-items: center;
 }
 section.services div.title-box h1 {
-  text-align: center;
-  font-size: var(--title-size);
-  color: var(--title-color);
   letter-spacing: 0.1vw;
+  margin-bottom: 2vh;
 }
 section.services div.title-box p {
   color: var(--text-color);
@@ -295,27 +297,10 @@ section.services div.coniner-box {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 10vh;
-}
-section.services div.coniner-box div.box {
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 5vh 2vw;
-  width: 22vw;
-  height: 20vh;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.2vw 0.8vw #00000028, 0 -0.2vw 0.4vw #00000098;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
+  flex-wrap: wrap;
+  gap: 5vw;
+  margin-top: 10vh;
 }
 section.services div.coniner-box div.box .top * {
   pointer-events: none;
@@ -349,39 +334,11 @@ section.services div.coniner-box div.box span {
   display: grid;
   place-content: center;
   color: var(--text-color-light);
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-}
-section.services div.coniner-box div.box span button {
-  background-color: var(--text-color-light);
-  padding: 1rem 2rem;
-  color: var(--title-color);
-  letter-spacing: 01px;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  transition: all 0.2s;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-}
-section.services div.coniner-box div.box span button:hover {
-  filter: brightness(95%);
-  -webkit-filter: brightness(95%);
-}
-section.services div.coniner-box div.box span button:active {
-  transform: scale(0.98);
-  -webkit-transform: scale(0.98);
-  -moz-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  -o-transform: scale(0.98);
+  transition: var(--trasnition-defult);
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
 }
 section.services div.coniner-box div.box:hover span {
   opacity: 1;
@@ -393,7 +350,7 @@ section.services div.coniner-box div.box:hover span {
 =====================================================
 */
 section.about {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -433,4 +390,68 @@ section.about div.about-box p {
   margin: 2vh 0 4vh 0;
   color: var(--para-color);
   font-size: var(--para-size);
+}
+
+/*
+=====================================================
+  experience section Styling
+=====================================================
+*/
+section.experience {
+  height: var(--section-height);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.experience h1.title {
+  margin-bottom: 5vh;
+}
+section.experience div.contaner-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh 4vw;
+}
+section.experience div.contaner-box .box * {
+  pointer-events: none;
+  transition: var(--trasnition-defult);
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
+}
+
+section.experience div.contaner-box .box h1 {
+  font-size: var(--text-size);
+  color: var(--text-color);
+  display: flex;
+  gap: 2vw 2vh;
+  z-index: -1;
+}
+
+section.experience div.contaner-box .box h1 .icons {
+  font-size: var(--icon-size);
+  color: var(--icon-color);
+}
+
+section.experience div.contaner-box .box p {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  backdrop-filter: blur(1px);
+  color: #353333;
+  background-color: #00000028;
+  height: 40%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+}
+section.experience div.contaner-box .box:hover p {
+  opacity: 1;
 }

@@ -24,6 +24,8 @@ Createing Root Variabels
   --text-color-light: hsl(var(--base-color), 8%, 65%);
   --btn-color: hsl(var(--base-color), 10%, 95%);
   --socal-media-color: hsl(var(--base-color), 92%, 85%);
+  --icon-color: hsl(var(--base-color), 25%, 45%);
+  --trasnition-defult: all 0.5s;
   /* Font Sizes */
   --logo: 2.6rem;
   --nav-btn: 1.5rem;
@@ -116,17 +118,16 @@ Create utilety Classes Styles
   display: grid;
   place-content: center;
   align-items: center;
-  border-radius: 0.3rem;
-  margin-right: 2vw;
-  transition: all 0.2s;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   -webkit-border-radius: 0.3rem;
 }
 .Btn:hover {
@@ -138,4 +139,35 @@ Create utilety Classes Styles
   -moz-transform: scale(0.99);
   -ms-transform: scale(0.99);
   -o-transform: scale(0.99);
+}
+.title {
+  color: var(--title-color);
+  font-size: var(--title-size);
+  text-decoration: underline;
+  text-underline-offset: 2vh;
+}
+.box {
+  transition: var(--trasnition-defult);
+  position: relative;
+  overflow: hidden;
+  width: 25vw;
+  height: 21vh;
+  box-shadow: 0 0.2vw 0.8vw var(--main-color-lighter),
+    0 -0.2vw 0.4vw var(--text-color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0 1vw;
+  cursor: pointer;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
 }
