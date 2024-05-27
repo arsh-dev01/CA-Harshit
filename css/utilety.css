@@ -39,6 +39,7 @@ Createing Root Variabels
   /* icon size */
   --icon-size: 2rem;
   /* Height */
+  --input-height: 6vh;
   --header-height: 8vh;
   --Hembarger-height: 40vh;
   --section-height: calc(100vh - var(--header-height));
@@ -170,4 +171,8 @@ Create utilety Classes Styles
   -moz-transition: var(--trasnition-defult);
   -ms-transition: var(--trasnition-defult);
   -o-transition: var(--trasnition-defult);
+}
+.box:hover {
+  box-shadow: 0 0.32vw 1.5vw var(--main-color-lighter),
+    0 -0.2vw 1vw var(--text-color-light);
 }

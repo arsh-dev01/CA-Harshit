@@ -455,3 +455,163 @@ section.experience div.contaner-box .box p {
 section.experience div.contaner-box .box:hover p {
   opacity: 1;
 }
+section.experience div.contaner-box .box:hover h1 {
+  margin-bottom: 20%;
+}
+
+/*
+=====================================================
+  Touch section Styling
+=====================================================
+*/
+section.touch {
+  height: var(--section-height);
+  /* border: 2px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.touch form.touchform,
+section.touch div.contact-box {
+  position: relative;
+  width: 40vw;
+  height: 70vh;
+  display: grid;
+  padding: 0 2vw;
+  gap: 5vh 0;
+}
+section.touch form.touchform h1,
+section.touch div.contact-box h1 {
+  text-decoration: none;
+  text-align: center;
+}
+section.touch form.touchform h1 span,
+section.touch div.contact-box h1 span {
+  display: block;
+  color: var(--text-color) !important;
+  font-size: var(--text-size);
+}
+section.touch form.touchform input,
+textarea {
+  border-radius: 1em;
+  padding: 0.1vw 1vw;
+  transition: outline 0.2s;
+  border: 1px solid var(--text-color-light);
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  -webkit-transition: outline 0.2s;
+  -moz-transition: outline 0.2s;
+  -ms-transition: outline 0.2s;
+  -o-transition: outline 0.2s;
+}
+textarea {
+  padding-top: 2vh;
+}
+section.touch form.touchform input {
+  height: var(--input-height);
+}
+
+section.touch form.touchform input:focus,
+textarea:focus {
+  outline-color: var(--main-color);
+}
+section.touch form.touchform span.input-span {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  position: absolute;
+  pointer-events: none;
+  top: 5vh;
+  left: 3.2vw;
+  transition: var(--trasnition-defult);
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
+}
+
+section.touch form.touchform span.Name {
+  top: 16.8vh;
+}
+section.touch form.touchform span.FocusName {
+  top: 12vh;
+  left: 2.2vw;
+}
+section.touch form.touchform span.Email {
+  top: 27.9vh;
+}
+section.touch form.touchform span.FocusEmail {
+  top: 22.9vh;
+  left: 2.2vw;
+}
+section.touch form.touchform span.PhoneNo {
+  top: 38.7vh;
+}
+section.touch form.touchform span.FocusPhoneNo {
+  top: 33.8vh;
+  left: 2.2vw;
+}
+section.touch form.touchform button {
+  margin: auto;
+}
+/*Contact Box stylign */
+section.touch div.contact-box {
+  /* border: 2px solid var(--text-color-light); */
+  border-radius: 1rem;
+  box-shadow: 0 0.32vw 1.5vw var(--main-color-lighter),
+    0 -0.2vw 1vw var(--text-color-light);
+  padding-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh 0vw;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+section.touch div.contact-box div.contact-links {
+  width: 100%;
+  display: grid;
+  /* border: 2px solid; */
+  gap: 5vh;
+  margin-bottom: 4vh;
+}
+section.touch div.contact-box div.contact-links .contaner-box {
+  /* border: 2px solid orange; */
+  border-radius: 1rem;
+  cursor: pointer;
+  height: 14vh;
+  background: var(--main-color-lighter);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+section.touch div.contact-box i {
+  height: 50%;
+  display: grid;
+  place-content: center;
+  padding: 0 1vw;
+  padding-right: 1.5vw;
+  margin-right: 0.5vw;
+  color: var(--icon-color);
+  font-size: calc(var(--icon-size) - 0.5rem);
+  border-right: 3px solid var(--main-color);
+}
+section.touch div.contact-box div.contact-links .contaner-box a {
+  width: 80%;
+  font-style: normal;
+  color: var(--text-color);
+}
+section.touch div.contact-links .contaner-box a h2 {
+  font-size: calc(var(--para-size) - 0.3rem);
+}
+section.touch div.contact-links .contaner-box a span {
+  font-size: var(--text-size);
+}

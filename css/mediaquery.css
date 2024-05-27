@@ -363,6 +363,7 @@ Under 500px and minmam 0px
   */
   section.experience {
     height: 180vh;
+    flex-direction: row;
   }
   section.experience div.contaner-box .box:nth-last-child(2) h1 {
     font-size: calc(var(--text-size) - 0.2rem);
