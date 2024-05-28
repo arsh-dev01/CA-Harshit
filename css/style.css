@@ -133,24 +133,20 @@ section.home div.image {
 }
 section.home div.image figure {
   cursor: pointer;
-  width: 25vw;
-  height: 50vh;
+  width: 30vw;
+  height: 30vw;
+  border: 2px solid var(--title-color);
+  background: var(--input-color);
+  border-radius: 50%;
+  overflow: hidden;
   padding-top: 2vh;
-  background-color: var(--main-color-lighter);
-  transform: rotate(2deg);
-  border: var(--text-color-light) 0.5vw groove;
   display: flex;
   justify-content: center;
-  border-radius: 0.5rem;
   transition: var(--trasnition-defult);
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  -o-transform: rotate(2deg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   -webkit-transition: var(--trasnition-defult);
   -moz-transition: var(--trasnition-defult);
   -ms-transition: var(--trasnition-defult);
@@ -163,7 +159,7 @@ section.home div.image figure:hover {
   -ms-transform: rotate(0);
   -o-transform: rotate(0);
 }
-section.home div.image .after {
+/* section.home div.image .after {
   content: "";
   display: block;
   width: 8vw;
@@ -194,10 +190,11 @@ section.home div.image .before {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
-}
+} */
 section.home div.image figure img {
   width: 90%;
-  height: 100%;
+  height: auto;
+  /* height: 100%; */
 }
 /* Socal media icons  */
 section.home .socalmedia-icons {
@@ -443,9 +440,10 @@ section.experience div.contaner-box .box p {
   bottom: 0;
   backdrop-filter: blur(1px);
   color: #353333;
-  background-color: #00000028;
+  background-color: var(--main-color-lighter);
   height: 40%;
   z-index: 10;
+  padding: 0 0.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,27 +482,30 @@ section.touch form.touchform h1,
 section.touch div.contact-box h1 {
   text-decoration: none;
   text-align: center;
+  font-weight: 600;
 }
 section.touch form.touchform h1 span,
 section.touch div.contact-box h1 span {
   display: block;
   color: var(--text-color) !important;
   font-size: var(--text-size);
+  font-weight: 400;
 }
 section.touch form.touchform input,
 textarea {
   border-radius: 1em;
+  background-color: var(--input-color);
   padding: 0.1vw 1vw;
-  transition: outline 0.2s;
+  transition: all 0.2s;
   border: 1px solid var(--text-color-light);
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
-  -webkit-transition: outline 0.2s;
-  -moz-transition: outline 0.2s;
-  -ms-transition: outline 0.2s;
-  -o-transition: outline 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 textarea {
   padding-top: 2vh;
@@ -515,7 +516,7 @@ section.touch form.touchform input {
 
 section.touch form.touchform input:focus,
 textarea:focus {
-  outline-color: var(--main-color);
+  outline: 1px solid var(--main-color);
 }
 section.touch form.touchform span.input-span {
   color: var(--text-color);
@@ -557,10 +558,10 @@ section.touch form.touchform button {
 }
 /*Contact Box stylign */
 section.touch div.contact-box {
-  /* border: 2px solid var(--text-color-light); */
+  margin-bottom: 11vh;
   border-radius: 1rem;
-  box-shadow: 0 0.32vw 1.5vw var(--main-color-lighter),
-    0 -0.2vw 1vw var(--text-color-light);
+  /* box-shadow: 0 0.32vw 1.5vw var(--main-color-lighter),
+    0 -0.2vw 1vw var(--text-color-light); */
   padding-top: 4vh;
   display: flex;
   flex-direction: column;
@@ -575,15 +576,13 @@ section.touch div.contact-box {
 section.touch div.contact-box div.contact-links {
   width: 100%;
   display: grid;
-  /* border: 2px solid; */
   gap: 5vh;
   margin-bottom: 4vh;
 }
 section.touch div.contact-box div.contact-links .contaner-box {
-  /* border: 2px solid orange; */
   border-radius: 1rem;
   cursor: pointer;
-  height: 14vh;
+  height: 12vh;
   background: var(--main-color-lighter);
   display: flex;
   align-items: center;
@@ -614,4 +613,28 @@ section.touch div.contact-links .contaner-box a h2 {
 }
 section.touch div.contact-links .contaner-box a span {
   font-size: var(--text-size);
+}
+
+/*
+=====================================================
+  Footer section Styling
+=====================================================
+*/
+footer {
+  border: 2px solid;
+  height: 25vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: url(../Image/image.svg) center/cover;
+}
+
+footer div.top {
+  height: 90%;
+  display: flex;
+}
+iframe {
+  outline: 2px solid;
+  width: 10vw;
+  height: 10vw;
 }

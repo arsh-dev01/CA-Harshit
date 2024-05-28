@@ -222,6 +222,7 @@ Under 500px and minmam 0px
     --text-size: 1.4rem;
     /* Height */
     --Home-height: 120vh;
+    --input-height: 7vh;
   }
   .Btn {
     width: 44vw;
@@ -265,7 +266,8 @@ Under 500px and minmam 0px
 
   section.home {
     flex-wrap: wrap-reverse;
-    height: 116vh;
+    height: 100vh;
+    justify-content: center;
   }
   section.home div.title-box {
     width: 100%;
@@ -276,23 +278,17 @@ Under 500px and minmam 0px
     align-items: center;
     gap: 2vw;
   }
-  section.home div.image {
-    width: 100%;
-    padding: 0 auto;
+  section.home div.title-box {
+    height: 50%;
   }
   section.home div.image figure {
-    width: 70vw;
-    height: 50vh;
+    width: 80vw;
+    height: 80vw;
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-  }
-  section.home div.image .before,
-  section.home div.image .after {
-    width: 20vw;
-    height: 20vw;
   }
   section.home div.image .after {
     left: 8vw;
@@ -301,9 +297,6 @@ Under 500px and minmam 0px
   section.home div.image .before {
     right: 7vw;
     bottom: -3.5vh;
-  }
-  section.home div.title-box {
-    height: 35%;
   }
   section.home div.title-box p {
     line-height: 1.3rem;
@@ -377,4 +370,43 @@ Under 500px and minmam 0px
   section.experience div.contaner-box .box p {
     opacity: 1;
   } */
+  section.touch {
+    flex-wrap: wrap-reverse;
+    height: 150vh;
+    margin-top: 7vh;
+  }
+  section.touch form.touchform,
+  section.touch div.contact-box {
+    width: 100%;
+  }
+  section.touch div.contact-box {
+    margin: 0;
+    padding: 0;
+  }
+  section.touch form.touchform span.input-span {
+    color: var(--text-color);
+    font-size: 01rem;
+    left: 5vw;
+  }
+  section.touch form.touchform span.Name {
+    top: 15vh;
+  }
+  section.touch form.touchform span.FocusName {
+    top: 9.5vh;
+    left: 2.2vw;
+  }
+  section.touch form.touchform span.Email {
+    top: 26.9vh;
+  }
+  section.touch form.touchform span.FocusEmail {
+    top: 21.5vh;
+    left: 2.2vw;
+  }
+  section.touch form.touchform span.PhoneNo {
+    top: 38.8vh;
+  }
+  section.touch form.touchform span.FocusPhoneNo {
+    top: 33.2vh;
+    left: 2.2vw;
+  }
 }

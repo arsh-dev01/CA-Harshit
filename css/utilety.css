@@ -24,6 +24,7 @@ Createing Root Variabels
   --text-color-light: hsl(var(--base-color), 8%, 65%);
   --btn-color: hsl(var(--base-color), 10%, 95%);
   --socal-media-color: hsl(var(--base-color), 92%, 85%);
+  --input-color: hsl(var(--base-color), 70%, 96%);
   --icon-color: hsl(var(--base-color), 25%, 45%);
   --trasnition-defult: all 0.5s;
   /* Font Sizes */
@@ -55,6 +56,7 @@ Createing Root Variabels
   text-decoration: none;
   list-style-type: none;
   border: none;
+  outline: none;
 }
 html,
 body,
