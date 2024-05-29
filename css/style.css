@@ -50,6 +50,18 @@ header.desktop-menu nav ul {
 header.desktop-menu nav ul li {
   width: 7vw;
   text-align: center;
+  transition: var(--trasnition-defult);
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
+}
+header.desktop-menu nav ul li:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 header.desktop-menu nav ul li a {
   position: relative;
@@ -130,6 +142,7 @@ section.home div.image {
   justify-content: center;
   align-items: center;
   position: relative;
+  top: 1.5vh;
 }
 section.home div.image figure {
   cursor: pointer;
@@ -139,7 +152,7 @@ section.home div.image figure {
   background: var(--input-color);
   border-radius: 50%;
   overflow: hidden;
-  padding-top: 2vh;
+  padding-top: 0.5vh;
   display: flex;
   justify-content: center;
   transition: var(--trasnition-defult);
@@ -152,45 +165,6 @@ section.home div.image figure {
   -ms-transition: var(--trasnition-defult);
   -o-transition: var(--trasnition-defult);
 }
-section.home div.image figure:hover {
-  transform: rotate(0);
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  -ms-transform: rotate(0);
-  -o-transform: rotate(0);
-}
-/* section.home div.image .after {
-  content: "";
-  display: block;
-  width: 8vw;
-  height: 8vw;
-  border: 1vw solid transparent;
-  border-bottom: none;
-  background-color: var(--text-color-light);
-  position: absolute;
-  left: -2vw;
-  top: -3.5vh;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-}
-section.home div.image .before {
-  content: "";
-  display: block;
-  width: 8vw;
-  height: 8vw;
-  border: 1vw solid var(--text-color-light);
-  position: absolute;
-  right: -3vw;
-  bottom: -4.5vh;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-} */
 section.home div.image figure img {
   width: 90%;
   height: auto;
@@ -268,6 +242,7 @@ section.home .socalmedia-icons i:hover .icon-back {
 =====================================================
 */
 section.services {
+  position: relative;
   height: var(--section-height);
   display: flex;
   flex-direction: column;
@@ -308,6 +283,7 @@ section.services div.coniner-box div.box .top h1 {
   align-items: center;
   gap: 1vw;
   font-size: var(--text-size);
+  margin-bottom: 2vh;
   color: var(--title-color);
 }
 section.services div.coniner-box div.box:nth-last-child(1) h1,
@@ -322,23 +298,58 @@ section.services div.coniner-box div.box .top i {
   color: var(--title-color);
 }
 section.services div.coniner-box div.box span {
-  opacity: 0;
+  /* opacity: 0;  */
   position: absolute;
-  backdrop-filter: blur(1px);
-  background-color: #3d393900;
+  bottom: 0;
   width: 100%;
-  height: 0%;
+  height: 30%;
+  background-color: var(--icon-color);
   display: grid;
   place-content: center;
-  color: var(--text-color-light);
+  cursor: pointer;
   transition: var(--trasnition-defult);
   -webkit-transition: var(--trasnition-defult);
   -moz-transition: var(--trasnition-defult);
   -ms-transition: var(--trasnition-defult);
   -o-transition: var(--trasnition-defult);
 }
-section.services div.coniner-box div.box:hover span {
-  opacity: 1;
+section.services div.coniner-box div.box span b {
+  transition: all 0.2s;
+  color: #ffff;
+  font-weight: 400;
+  letter-spacing: 0.1vh;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+section.services div.coniner-box div.box span:active b {
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+}
+div.information {
+  width: 100%;
+  height: var(--section-height);
+  backdrop-filter: blur(1px);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.services div.info-box {
+  background-color: var(--icon-color);
+  width: 25vw;
+  height: 25vh;
+  border-radius: 1rem;
+  color: var(--input-color);
+  padding: 1vh 1vw;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 /*
@@ -439,8 +450,9 @@ section.experience div.contaner-box .box p {
   position: absolute;
   bottom: 0;
   backdrop-filter: blur(1px);
-  color: #353333;
-  background-color: var(--main-color-lighter);
+  background-color: var(--icon-color);
+  color: #ffff;
+  font-size: calc(var(--para-size) - 0.35rem);
   height: 40%;
   z-index: 10;
   padding: 0 0.5vw;
@@ -621,20 +633,71 @@ section.touch div.contact-links .contaner-box a span {
 =====================================================
 */
 footer {
-  border: 2px solid;
+  overflow: hidden;
+  position: relative;
   height: 25vh;
   padding: 0;
   display: flex;
   flex-direction: column;
-  background: url(../Image/image.svg) center/cover;
+  background: var(--main-color-lighter) center/cover;
+  display: grid;
+  place-content: center;
+  gap: 2vh 0;
 }
-
-footer div.top {
-  height: 90%;
+footer div.socalmedia-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 2vw;
 }
-iframe {
-  outline: 2px solid;
-  width: 10vw;
-  height: 10vw;
+footer div.socalmedia-icons i {
+  transition: var(--trasnition-defult);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--social-media-size);
+  color: var(--title-color);
+  cursor: pointer;
+  outline: 2px solid var(--main-color-alt);
+  border-radius: 50%;
+  padding: 0.7vw;
+  overflow: hidden;
+  transition: var(--trasnition-defult);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: var(--trasnition-defult);
+  -moz-transition: var(--trasnition-defult);
+  -ms-transition: var(--trasnition-defult);
+  -o-transition: var(--trasnition-defult);
+}
+footer div.socalmedia-icons i:hover {
+  color: var(--input-color);
+  outline-color: var(--text-color);
+  background-color: var(--title-color);
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 3vw;
+}
+footer nav a {
+  color: var(--title-color);
+}
+footer nav a:hover {
+  color: var(--text-color);
+}
+footer div.devloper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1vh 0;
+  display: grid;
+  place-content: center;
+  background-color: var(--icon-color);
+  width: 100vw;
+  color: var(--input-color);
 }

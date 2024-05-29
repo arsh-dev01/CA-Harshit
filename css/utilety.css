@@ -121,12 +121,12 @@ Create utilety Classes Styles
   display: grid;
   place-content: center;
   align-items: center;
-  border-radius: 0.8rem;
+  border-radius: 1rem;
   transition: all 0.3s;
-  -webkit-border-radius: 0.8rem;
-  -moz-border-radius: 0.8rem;
-  -ms-border-radius: 0.8rem;
-  -o-border-radius: 0.8rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -135,6 +135,11 @@ Create utilety Classes Styles
 }
 .Btn:hover {
   background-color: var(--main-color-alt);
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
 }
 .Btn:active {
   transform: scale(0.99);
@@ -175,6 +180,11 @@ Create utilety Classes Styles
   -o-transition: var(--trasnition-defult);
 }
 .box:hover {
+  transform: scale(1.05);
   box-shadow: 0 0.32vw 1.5vw var(--main-color-lighter),
     0 -0.2vw 1vw var(--text-color-light);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
